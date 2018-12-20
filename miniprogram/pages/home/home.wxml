@@ -1,0 +1,47 @@
+<!--pages/home/home.wxml-->
+<view class='container'>
+  <view class='header'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" indicator-active-color="#A8A8A8" indicator-color="#fff">
+
+      <block wx:for="{{imgUrls}}" wx:key="imgUrls">
+
+        <swiper-item>
+
+          <image src="{{item.url}}" class="slide-image" />
+
+        </swiper-item>
+
+      </block>
+
+    </swiper>
+  </view>
+  <view class='section'>
+    <view class='li'>
+      <view class='caption'>
+        <text>A</text>
+        <text>B</text>
+      </view>
+      <view class='icon'>
+        <image></image>
+      </view>
+    </view>
+    <view>
+      <view class='caption'>
+        <text></text>
+        <text></text>
+      </view>
+      <view class='icon'>
+        <image></image>
+      </view>
+    </view>
+    <view>
+      <view class='caption'>
+        <text></text>
+        <text></text>
+      </view>
+      <view class='icon'>
+        <image></image>
+      </view>
+    </view>
+  </view>
+</view>
