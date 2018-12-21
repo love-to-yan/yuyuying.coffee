@@ -16,31 +16,39 @@
     </swiper>
   </view>
   <view class='section'>
-    <view class='li'>
+    <view>
       <view class='caption'>
-        <text>A</text>
-        <text>B</text>
+        <text>现在下单</text>
+        <text>ORDER NOW</text>
       </view>
       <view class='icon'>
-        <image></image>
+        <view>
+          <image src='../../images/icon/coffee.png'></image>
+        </view>
       </view>
     </view>
     <view>
       <view class='caption'>
-        <text></text>
-        <text></text>
+        <text>咖啡钱包</text>
+        <text>COFFEE WALLET</text>
       </view>
       <view class='icon'>
-        <image></image>
+        <view>
+          <image src='../../images/icon/wallet.png'></image>
+        </view>
+
       </view>
     </view>
     <view>
       <view class='caption'>
-        <text></text>
-        <text></text>
+        <text>邀请得杯</text>
+        <text>SHARE & GET IT FREE</text>
       </view>
       <view class='icon'>
-        <image></image>
+        <view>
+          <image src='../../images/icon/share.png'></image>
+        </view>
+
       </view>
     </view>
   </view>

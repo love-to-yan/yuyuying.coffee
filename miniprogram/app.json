@@ -30,6 +30,13 @@
         "text": "首页"
       },
       {
+        "pagePath": "pages/menu/menu",
+        "iconPath": "./images/icon/menu.png",
+        "selectedIconPath": "./images/icon/menu.png",
+        "color": "#000000",
+        "text": "菜单"
+      },
+      {
         "pagePath": "pages/order/order",
         "text": "订单",
         "iconPath": "./images/icon/order.png",

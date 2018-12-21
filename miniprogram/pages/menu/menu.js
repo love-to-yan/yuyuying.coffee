@@ -5,6 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
+    coffee:[{
+      title:'',
+      subTitle:'',
+      commodity:[{
+        imgUrl:'',
+        caption:'榛果拿铁',
+        EnglishCaption:'Hazelnut Latte',
+        specifications:'',
+        price:''
+      },
+      {
+        imgUrl: '',
+        caption: '',
+        EnglishCaption: '',
+        specifications: '',
+        price: ''
+      }]
+    }],
+
 
   },
 

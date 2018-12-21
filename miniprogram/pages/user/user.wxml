@@ -1,2 +1,24 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class='container'>
+  <view class='header'>
+    <view class='info'>
+      <image src='../../images/login.jpg'></image>
+      <text>{{user.name}}</text>
+    </view>
+    <view class='btn'>
+      <image src='../../images/icon/next.png'></image>
+    </view>
+  </view>
+  <view class='section'>
+    <view wx:for='{{menu}}'>
+      <view class='left'>
+        <image src='{{item.iconUrl}}'></image>
+        <text>{{item.text}}</text>
+      </view>
+      <view class='right'>
+        <image src='../../images/icon/next.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='footer'></view>
+</view>

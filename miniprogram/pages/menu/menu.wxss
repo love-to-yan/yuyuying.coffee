@@ -1,1 +1,58 @@
 /* pages/menu/menu.wxss */
+@import '../../style/guide.wxss';
+
+page {
+  width: 100%;
+  height: 100%;
+  background: #f6f6f6;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.header {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px rebeccapurple solid;
+}
+
+.position {
+  height: 33%;
+  border: 1px red solid;
+}
+
+.carousel {
+  height: 67%;
+  border: 1px orange solid;
+}
+
+.section {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  display: -webkit-flex;
+  border: 1px orange solid;
+}
+
+.left {
+  width: 20%;
+  height: 100%;
+  border: 1rpx rebeccapurple solid;
+}
+
+.right {
+  width: 80%;
+  height: 100%;
+  border: 1rpx goldenrod solid;
+}
+
+.title {
+  width: 100%;
+  height: 10%;
+}

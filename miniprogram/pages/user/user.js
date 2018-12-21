@@ -5,7 +5,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    user:{
+      name:'宇少'
+    },
+    menu:[{
+      iconUrl:'../../images/icon/gps.png',
+      text:'收货地址'
+    },
+     {
+       iconUrl: '../../images/icon/coffee.png',
+        text: '咖啡钱包'
+      },
+      {
+        iconUrl: '../../images/icon/coupon.png',
+        text: '优惠卷'
+      },
+      {
+        iconUrl: '../../images/icon/invoice.png',
+        text: '发票管理'
+      },
+      {
+        iconUrl: '../../images/icon/service.png',
+        text: '客户服务'
+      }]
   },
 
   /**

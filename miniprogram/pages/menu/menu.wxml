@@ -1,2 +1,39 @@
-<!--pages/menu/menu.wxml-->
-<text>pages/menu/menu.wxml</text>
+<view class='container'>
+  <view class='header'>
+    <view class='position'></view>
+    <view class='carousel'>
+      <image></image>
+    </view>
+  </view>
+  <view class='section'>
+    <view class='left .flex_col middle_center'>
+      <view wx:for='{{}}' class='title'>
+        <text>{{}}</text>
+      </view>
+    </view>
+    <scroll-view class='right .flex_col'>
+      <view wx:for='{{}}'>
+        <view id='{{}}'>
+          <text>{{}}</text>
+          <text>{{}}</text>
+        </view>
+        <view wx:for='{{}}'>
+          <view>
+            <view>
+              <image></image>
+            </view>
+            <view>
+              <text>{{}}</text>
+              <text>{{}}</text>
+              <text>{{}}</text>
+              <text>{{}}</text>
+            </view>
+            <view>
+              <image></image>
+            </view>
+          </view>
+        </view>
+      </view>
+  </scroll-view>
+  </view>
+</view>
