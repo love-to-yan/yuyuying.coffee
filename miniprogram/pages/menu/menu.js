@@ -5,28 +5,110 @@ Page({
    * 页面的初始数据
    */
   data: {
+    titleSeledt:'renqi',
     coffee:[{
-      title:'',
-      subTitle:'',
+      title:'人气top',
+      id:'renqi',
+      subTitle:'aa',
       commodity:[{
-        imgUrl:'',
-        caption:'榛果拿铁',
-        EnglishCaption:'Hazelnut Latte',
-        specifications:'',
-        price:''
+        imgUrl:'../../images/coffee/HazelnutLatte.jpg',
+        name:'榛果拿铁',
+        EnglishName:'Hazelnut Latte',
+        specifications:'大/单糖/热',
+        price:'27'
       },
       {
-        imgUrl: '',
-        caption: '',
-        EnglishCaption: '',
-        specifications: '',
-        price: ''
+        imgUrl: '../../images/coffee/HazelnutLatte.jpg',
+        name: '榛果拿铁',
+        EnglishName: 'Hazelnut Latte',
+        specifications: '大/单糖/热',
+        price: '27'
       }]
-    }],
-
-
+    },
+      {
+        title: '人气top',
+        id:'qiren',
+        subTitle: 'aa',
+        commodity: [{
+          imgUrl: '../../images/coffee/HazelnutLatte.jpg',
+          name: '榛果拿铁',
+          EnglishName: 'Hazelnut Latte',
+          specifications: '大/单糖/热',
+          price: '27'
+        },
+        {
+          imgUrl: '../../images/coffee/HazelnutLatte.jpg',
+          name: '榛果拿铁',
+          EnglishName: 'Hazelnut Latte',
+          specifications: '大/单糖/热',
+          price: '27'
+        }]
+      },
+      {
+        title: '人气top',
+        id:'qisini',
+        subTitle: 'aa',
+        commodity: [{
+          imgUrl: '../../images/coffee/HazelnutLatte.jpg',
+          name: '榛果拿铁',
+          EnglishName: 'Hazelnut Latte',
+          specifications: '大/单糖/热',
+          price: '27'
+        },
+        {
+          imgUrl: '../../images/coffee/HazelnutLatte.jpg',
+          name: '榛果拿铁',
+          EnglishName: 'Hazelnut Latte',
+          specifications: '大/单糖/热',
+          price: '27'
+        }]
+      }
+      ,
+      {
+        title: '人气top',
+        id: 'qisinia',
+        subTitle: 'aa',
+        commodity: [{
+          imgUrl: '../../images/coffee/HazelnutLatte.jpg',
+          name: '榛果拿铁',
+          EnglishName: 'Hazelnut Latte',
+          specifications: '大/单糖/热',
+          price: '27'
+        },
+        {
+          imgUrl: '../../images/coffee/HazelnutLatte.jpg',
+          name: '榛果拿铁',
+          EnglishName: 'Hazelnut Latte',
+          specifications: '大/单糖/热',
+          price: '27'
+        }]
+      }],
+    
   },
+  toTabBar(e){
+    
+  },
+  rolling_bottom: function () {
 
+    var that = this
+    var tab_con = wx.createSelectorQuery().select('#tab-con')
+    tab_con.boundingClientRect(function (res) {
+      let view_height = res.height
+      wx.getSystemInfo({
+        success: function (res) {
+          let scroll_view_height = (res.windowHeight * 0.93).toFixed(0)
+          if (view_height >= scroll_view_height) {
+            let height = view_height - scroll_view_height
+            that.setData({
+              top: height
+            });
+          }
+        }
+      })
+
+    }).exec(
+    )
+  },
   /**
    * 生命周期函数--监听页面加载
    */

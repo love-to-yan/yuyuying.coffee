@@ -6,34 +6,32 @@
     </view>
   </view>
   <view class='section'>
-    <view class='left .flex_col middle_center'>
-      <view wx:for='{{}}' class='title'>
-        <text>{{}}</text>
+    <view class='left flex_col'>
+      <view wx:for='{{coffee}}' class='flex_row title {{titleSeledt==item.id?"titleSelected":""}} middle_center  classify' wx:key='id'data-title='{{item.id}}' bindtap=''>
+        <text class=''>{{item.title}}</text>
       </view>
     </view>
-    <scroll-view class='right .flex_col'>
-      <view wx:for='{{}}'>
-        <view id='{{}}'>
-          <text>{{}}</text>
-          <text>{{}}</text>
+    <scroll-view class='right .flex_col ' scroll-y='true' bindscrolltolower='rolling_bottom' id='tab-con'>
+      <view wx:for='{{coffee}}' wx:key='id' wx:for-index='cIndex' class='flex_col'>
+        <view id='{{item.id}}' class='caption flex_col'>
+          <text>{{item.title}}</text>
+          <text>{{item.subTitle}}</text>
         </view>
-        <view wx:for='{{}}'>
-          <view>
-            <view>
-              <image></image>
-            </view>
-            <view>
-              <text>{{}}</text>
-              <text>{{}}</text>
-              <text>{{}}</text>
-              <text>{{}}</text>
-            </view>
-            <view>
-              <image></image>
-            </view>
+        <view wx:for='{{item.commodity}}' wx:for-item='cf' wx:key='id' class='goods flex_row'>
+          <view class='coffeeImg'>
+            <image src='{{cf.imgUrl}}'></image>
+          </view>
+          <view class='info flex_col'>
+            <text>{{cf.name}}</text>
+            <text>{{cf.EnglisName}}</text>
+            <text>默认：{{cf.specifications}}</text>
+            <text>￥{{cf.price}}</text>
+          </view>
+          <view class='addIcon'>
+            <image></image>
           </view>
         </view>
       </view>
-  </scroll-view>
+    </scroll-view>
   </view>
 </view>

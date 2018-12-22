@@ -1,4 +1,5 @@
 /* pages/user/user.wxss */
+@import '../../style/guide.wxss';
 page {
   width: 100%;
   height: 100%;
