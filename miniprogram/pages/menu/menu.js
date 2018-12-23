@@ -1,4 +1,5 @@
 // pages/menu/menu.js
+
 Page({
 
   /**
@@ -9,7 +10,7 @@ Page({
     coffee:[{
       title:'人气top',
       id:'renqi',
-      subTitle:'aa',
+      subTitle:'人气排行最高的',
       commodity:[{
         imgUrl:'../../images/coffee/HazelnutLatte.jpg',
         name:'榛果拿铁',
@@ -86,7 +87,19 @@ Page({
     
   },
   toTabBar(e){
-    
+    let titleSeledt = e.currentTarget.dataset.title;
+    this.setData({
+      titleSeledt: titleSeledt
+    })
+    console.log(e);
+  },
+  scroll(e){
+    const query = wx.createSelectorQuery();
+    console.log(e);
+    query.select('.goods').scrollOffset().exec(res=>{
+      console.log(res)
+    });
+   
   },
   rolling_bottom: function () {
 

@@ -26,6 +26,16 @@ page {
   justify-content: center;
   align-items: center;
 }
+.coordinates{
+justify-content:center;
+}
+.coordinates>text:nth-child(1){
+  font-size: 1em;
+}
+.coordinates>text:nth-child(2){
+  font-size: .8em;
+  color: gainsboro;
+}
 .container {
   width: 100%;
   height: 100%;

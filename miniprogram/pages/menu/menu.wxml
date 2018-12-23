@@ -1,18 +1,31 @@
 <view class='container'>
   <view class='header'>
-    <view class='position'></view>
+    <view class='position flex_row'>
+      <view class='flex_row middle_center'>
+        <image src='../../images/icon/gps.png'></image>
+      </view>
+      <view class='flex_col coordinates'>
+        <text>清凤时代城店</text>
+        <text>距您1.5km</text>
+      </view>
+      <view class='select flex_row'>
+      <text>自提</text>
+      <text>外送</text>
+      </view>
+    </view>
     <view class='carousel'>
-      <image></image>
+      <image src='../../images/154120617.jpg'></image>
     </view>
   </view>
   <view class='section'>
     <view class='left flex_col'>
-      <view wx:for='{{coffee}}' class='flex_row title {{titleSeledt==item.id?"titleSelected":""}} middle_center  classify' wx:key='id'data-title='{{item.id}}' bindtap=''>
+      <view wx:for='{{coffee}}' class='flex_row title {{titleSeledt==item.id?"titleSelected":""}} middle_center  classify' wx:key='id' data-title='{{item.id}}' bindtap='toTabBar'>
         <text class=''>{{item.title}}</text>
       </view>
     </view>
-    <scroll-view class='right .flex_col ' scroll-y='true' bindscrolltolower='rolling_bottom' id='tab-con'>
-      <view wx:for='{{coffee}}' wx:key='id' wx:for-index='cIndex' class='flex_col'>
+    <scroll-view class='right .flex_col ' scroll-y='true' bindscrolltolower='rolling_bottom' id='tab-con' bindscroll='scroll' scroll-into-view='{{titleSeledt}}'>
+      <view class='top'></view>
+      <view wx:for='{{coffee}}' wx:key='id' wx:for-index='cIndex' class='flex_col sort'>
         <view id='{{item.id}}' class='caption flex_col'>
           <text>{{item.title}}</text>
           <text>{{item.subTitle}}</text>
@@ -23,7 +36,7 @@
           </view>
           <view class='info flex_col'>
             <text>{{cf.name}}</text>
-            <text>{{cf.EnglisName}}</text>
+            <text>{{cf.EnglishName}}</text>
             <text>默认：{{cf.specifications}}</text>
             <text>￥{{cf.price}}</text>
           </view>
