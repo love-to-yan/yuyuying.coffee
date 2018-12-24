@@ -21,17 +21,17 @@ Page({
       {
         iconUrl: '../../images/icon/coupon.png',
         text: '优惠卷',
-        to: ''
+        to: 'toCoupon'
       },
       {
         iconUrl: '../../images/icon/invoice.png',
         text: '发票管理',
-        to: ''
+        to: 'toInvoice'
       },
       {
         iconUrl: '../../images/icon/service.png',
         text: '客户服务',
-        to: ''
+        to: 'toService'
       }
     ]
   },
@@ -50,7 +50,17 @@ Page({
       url: '../coffeeWallet/coffeeWallet'
     })
   },
+  toCoupon() {
+    wx.navigateTo({
+      url: '../coupon/coupon'
+    })
+  },
+  toInvoice(){
 
+  },
+  toService(){
+
+  },
   /**
    * 生命周期函数--监听页面加载
    */

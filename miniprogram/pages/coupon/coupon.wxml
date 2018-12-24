@@ -1,0 +1,13 @@
+<!--pages/coupon/coupon.wxml-->
+<view class='container'>
+  <scroll-view wx:if='{{couponFlag}}' class='scroll'>
+    <view class='main'>
+      <coupon wx:for='{{coupon}}'
+      couponName='{{item.couponName}}'
+      couponValidity='{{item.couponValidity}}'
+      discount='{{item.discount}}'>
+      {{item.couponMsg}}</coupon>
+    </view>
+  </scroll-view>
+  <view wx:if='{{!couponFlag}}'></view>
+</view>

@@ -1,0 +1,20 @@
+<!--miniprogram/template/coupon/coupon.wxml-->
+
+<view class='coupon'>
+  <view class='header'>
+    <view>
+      <text class='big'>{{discountStart}}</text>
+      <text>{{discountEnd}}折</text>
+    </view>
+    <view>
+      <text>{{couponName}}</text>
+      <text class='validity'>有效期至{{couponValidity}}</text>
+    </view>
+  </view>
+  <view class='section'>
+    <text bindtap='showHidden'>使用规则</text>
+  </view>
+  <view class='footer' wx:if='{{messageFlag}}'>
+    <slot></slot>
+  </view>
+</view>

@@ -11,24 +11,26 @@
     "pages/chooseLib/chooseLib",
     "pages/userInfo/userInfo",
     "pages/address/address",
-    "pages/coffeeWallet/coffeeWallet"
+    "pages/coffeeWallet/coffeeWallet",
+    "pages/coupon/coupon",
+    "template/coupon/coupon"
   ],
-    "window": {
-      "backgroundColor": "#F6F6F6",
-      "backgroundTextStyle": "light",
-      "navigationBarTitleText": "yuyuying coffee",
-      "navigationBarBackgroundColor": "#fff",
-      "navigationBarTextStyle": "black"
-    },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "yuyuying coffee",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
   "tabBar": {
-  "color": "#ABABAB",
-  "selectedColor": "#ABABAB",
-  "borderStyle": "black",
+    "color": "#ABABAB",
+    "selectedColor": "#ABABAB",
+    "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/home/home",
         "iconPath": "./images/icon/home.png",
-        "selectedIconPath":"./images/icon/homeselected.png",
+        "selectedIconPath": "./images/icon/homeselected.png",
         "color": "#000000",
         "text": "首页"
       },
