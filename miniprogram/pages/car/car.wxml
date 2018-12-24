@@ -3,5 +3,5 @@
 <view wx:if='{{!goodsFlag}}' class='zeroGoods'>
 <image src='../../images/icon/car.png' width='60rpx' height='120rpx'></image>
 <text>您的购物车有点寂寞</text>
-<view class='toMenu'>去喝一杯</view>
+<view class='toMenu' bindtap='toMenu'>去喝一杯</view>
 </view>

@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  toMenu(){
+    wx.switchTab({
+      url: '/pages/menu/menu',
+    })
   }
 })

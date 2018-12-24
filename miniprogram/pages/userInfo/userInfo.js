@@ -8,15 +8,31 @@ Page({
     user:{
       name:'张少宇',
       sex:'男',
-      tel:'189-8120-9011'
+      tel:'189-8120-9011',
+      userUrl:''
     }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+ exittUser(){
+  
+  },
   onLoad: function (options) {
-
+    let that = this;
+    wx.getUserInfo({
+      success(res) {
+        console.log(res);
+        const userInfo = res.userInfo
+        const nickName = userInfo.nickName
+        const avatarUrl = userInfo.avatarUrl
+        that.setData({
+          "user.name": nickName,
+          "user.userUrl": avatarUrl
+        })
+      }
+    })
   },
 
   /**

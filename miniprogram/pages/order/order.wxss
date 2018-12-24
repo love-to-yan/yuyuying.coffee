@@ -33,3 +33,7 @@ page {
   box-sizing: border-box; 
   margin-top:60rpx;
 }
+.toMenu{
+  font-size: 24rpx;
+  color: #4a86e8;
+}

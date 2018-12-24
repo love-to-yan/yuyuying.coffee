@@ -2,7 +2,7 @@
 <view class='container'>
   <view class='header'>
     <view class='info' bindtap='toUserInfo'>
-      <image src='../../images/login.jpg'></image>
+      <image src='{{user.userUrl}}'></image>
       <text>{{user.name}}</text>
     </view>
     <view class='btn'>

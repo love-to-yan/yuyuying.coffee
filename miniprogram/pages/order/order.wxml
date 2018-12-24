@@ -3,5 +3,5 @@
 <view wx:if='{{!orderFlag}}' class='zeroOrder'>
 <image src='../../images/icon/order.png' width='60rpx' height='120rpx'></image>
 <text>您还没有订单哦</text>
-<view class='toMenu'>去喝一杯</view>
+<view class='toMenu' bindtap='toMenu'>去喝一杯</view>
 </view>

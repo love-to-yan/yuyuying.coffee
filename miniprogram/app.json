@@ -13,7 +13,8 @@
     "pages/address/address",
     "pages/coffeeWallet/coffeeWallet",
     "pages/coupon/coupon",
-    "template/coupon/coupon"
+    "template/coupon/coupon",
+    "pages/login/login"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

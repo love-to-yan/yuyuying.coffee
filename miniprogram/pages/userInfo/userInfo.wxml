@@ -4,8 +4,8 @@
    
       <text>头像</text>
 
-    <view>
-      <image></image>
+    <view class='userLogin'>
+      <image src='{{user.userUrl}}'></image>
     </view>
   </view>
   <view class='userName'>
@@ -36,6 +36,6 @@
 
   </view>
   <view class='exit'>
-    <text>退出登录</text>
+    <text bindtap='exitUser'>退出登录</text>
   </view>
 </view>

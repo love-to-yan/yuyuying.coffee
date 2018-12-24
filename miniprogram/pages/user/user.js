@@ -6,7 +6,8 @@ Page({
    */
   data: {
     user: {
-      name: '宇少'
+      name: '',
+      userUrl:''
     },
     menu: [{
         iconUrl: '../../images/icon/gps.png',
@@ -65,7 +66,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    let that = this;
+    wx.getUserInfo({
+      success(res) {
+        console.log(res);
+        const userInfo = res.userInfo
+        const nickName = userInfo.nickName
+        const avatarUrl = userInfo.avatarUrl
+        that.setData({
+          "user.name": nickName,
+          "user.userUrl":avatarUrl
+        })
+      }
+    })
   },
 
   /**
