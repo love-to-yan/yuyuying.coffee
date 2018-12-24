@@ -1,1 +1,36 @@
 /* pages/car/car.wxss */
+/* pages/order/order.wxss */
+@import '../../style/guide.wxss';
+
+page {
+  width: 100%;
+  height: 100%;
+  background: #f6f6f6;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.zeroGoods{
+  width: 100%;
+  height: 100%;
+  background: #f6f6f6;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.zeroGoods>image{
+  width: 120rpx;
+  height: 160rpx;
+}
+.zeroGoods>text{
+  font-size: .8em;
+}
+.zeroGoods>view{
+  border: 1rpx #4a86e8 solid;
+  padding: 10rpx 40rpx;
+  box-sizing: border-box; 
+  margin-top:60rpx;
+}

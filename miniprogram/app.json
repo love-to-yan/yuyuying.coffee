@@ -8,7 +8,10 @@
     "pages/car/car",
     "pages/cup/cup",
     "pages/databaseGuide/databaseGuide",
-    "pages/chooseLib/chooseLib"
+    "pages/chooseLib/chooseLib",
+    "pages/userInfo/userInfo",
+    "pages/address/address",
+    "pages/coffeeWallet/coffeeWallet"
   ],
     "window": {
       "backgroundColor": "#F6F6F6",
@@ -32,7 +35,7 @@
       {
         "pagePath": "pages/menu/menu",
         "iconPath": "./images/icon/menu.png",
-        "selectedIconPath": "./images/icon/menu.png",
+        "selectedIconPath": "./images/icon/menuselected.png",
         "color": "#000000",
         "text": "菜单"
       },
@@ -43,7 +46,7 @@
         "selectedIconPath": "./images/icon/orderselected.png"
       },
       {
-        "pagePath": "pages/order/order",
+        "pagePath": "pages/car/car",
         "text": "购物车",
         "iconPath": "./images/icon/car.png",
         "selectedIconPath": "./images/icon/carselected.png"

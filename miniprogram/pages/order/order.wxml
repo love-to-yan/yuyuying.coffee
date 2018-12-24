@@ -1,2 +1,7 @@
 <!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<view wx:if='{{orderFlag}}'></view>
+<view wx:if='{{!orderFlag}}' class='zeroOrder'>
+<image src='../../images/icon/order.png' width='60rpx' height='120rpx'></image>
+<text>您还没有订单哦</text>
+<view class='toMenu'>去喝一杯</view>
+</view>

@@ -1,7 +1,7 @@
 <!--pages/user/user.wxml-->
 <view class='container'>
   <view class='header'>
-    <view class='info'>
+    <view class='info' bindtap='toUserInfo'>
       <image src='../../images/login.jpg'></image>
       <text>{{user.name}}</text>
     </view>
@@ -10,8 +10,8 @@
     </view>
   </view>
   <view class='section'>
-    <view wx:for='{{menu}}'>
-      <view class='left'>
+    <view wx:for='{{menu}}'wx:key='menu'>
+      <view class='left' bindtap='{{item.to}}'>
         <image src='{{item.iconUrl}}'></image>
         <text>{{item.text}}</text>
       </view>

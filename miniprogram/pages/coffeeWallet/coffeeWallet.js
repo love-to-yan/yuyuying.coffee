@@ -1,11 +1,12 @@
-// pages/order/order.js
+// pages/coffeeWallet/coffeeWallet.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    orderFlag:false
+    walletFlag:false,
+    wallet:[]
   },
 
   /**

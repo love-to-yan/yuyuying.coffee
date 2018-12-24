@@ -1,11 +1,12 @@
-// pages/order/order.js
+// pages/address/address.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    orderFlag:false
+    addressFlag:false,
+    address:[]
   },
 
   /**

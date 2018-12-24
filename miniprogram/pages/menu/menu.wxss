@@ -27,7 +27,7 @@ page {
 }
 
 .position {
-  height: 33%;
+  height: 30%;
   padding:0rpx 20rpx;
   box-sizing: border-box;
 }
@@ -43,7 +43,7 @@ page {
   box-sizing: border-box;
 }
 .select text{
-  padding: 10rpx;
+  padding: 10rpx 16rpx;
   font-size: 20rpx;
   box-sizing: border-box;
 }

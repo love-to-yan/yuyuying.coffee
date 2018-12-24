@@ -20,67 +20,61 @@ Page({
       },
       {
         imgUrl: '../../images/coffee/HazelnutLatte.jpg',
-        name: '榛果拿铁',
-        EnglishName: 'Hazelnut Latte',
-        specifications: '大/单糖/热',
+        name: '圣诞姜饼人拿铁',
+        EnglishName: 'Christmas Gingerbread Latte',
+        specifications: '大/默认奶油/热',
         price: '27'
       }]
     },
       {
-        title: '人气top',
-        id:'qiren',
-        subTitle: 'aa',
+        title: '大师咖啡',
+        id:'dashi',
+        subTitle: 'WBC (世界咖啡师大赛) 冠军团队拼配',
         commodity: [{
           imgUrl: '../../images/coffee/HazelnutLatte.jpg',
-          name: '榛果拿铁',
-          EnglishName: 'Hazelnut Latte',
+          name: '拿铁',
+          EnglishName: 'Latte',
           specifications: '大/单糖/热',
-          price: '27'
+          price: '24'
         },
         {
           imgUrl: '../../images/coffee/HazelnutLatte.jpg',
-          name: '榛果拿铁',
-          EnglishName: 'Hazelnut Latte',
+          name: '香草拿铁',
+          EnglishName: 'Vanilla Latte',
           specifications: '大/单糖/热',
           price: '27'
         }]
       },
       {
-        title: '人气top',
-        id:'qisini',
-        subTitle: 'aa',
+        title: '零度拿铁',
+        id:'zero',
+        subTitle: '不含咖啡的拿铁',
         commodity: [{
           imgUrl: '../../images/coffee/HazelnutLatte.jpg',
-          name: '榛果拿铁',
-          EnglishName: 'Hazelnut Latte',
-          specifications: '大/单糖/热',
+          name: '抹茶拿铁',
+          EnglishName: 'Match Latte',
+          specifications: '大/热',
           price: '27'
-        },
-        {
-          imgUrl: '../../images/coffee/HazelnutLatte.jpg',
-          name: '榛果拿铁',
-          EnglishName: 'Hazelnut Latte',
-          specifications: '大/单糖/热',
-          price: '27'
-        }]
+        }
+        ]
       }
       ,
       {
-        title: '人气top',
-        id: 'qisinia',
-        subTitle: 'aa',
+        title: '瑞纳冰',
+        id: 'nabing',
+        subTitle: '瑞纳冰',
         commodity: [{
           imgUrl: '../../images/coffee/HazelnutLatte.jpg',
-          name: '榛果拿铁',
-          EnglishName: 'Hazelnut Latte',
-          specifications: '大/单糖/热',
+          name: '小雪荔枝瑞纳冰',
+          EnglishName: 'Lychee Exfreezo',
+          specifications: '大',
           price: '27'
         },
         {
           imgUrl: '../../images/coffee/HazelnutLatte.jpg',
-          name: '榛果拿铁',
-          EnglishName: 'Hazelnut Latte',
-          specifications: '大/单糖/热',
+          name: '卡布奇诺瑞纳冰',
+          EnglishName: 'Cappuccino Exfreezo',
+          specifications: '大/默认奶油',
           price: '27'
         }]
       }],

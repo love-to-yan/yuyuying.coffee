@@ -1,0 +1,11 @@
+<!--pages/address/address.wxml-->
+<view class='container'>
+  <view class='zeroAddress' wx:if='{{!addressFlag}}'>
+    <image src='../../images/icon/warning.png'></image>
+    <text>您还没有地址信息</text>
+  </view>
+  <view class='main' wx:if='{{addressFlag}}'></view>
+  <view class='footer'>
+    <text>+ 新增收货地址</text>
+  </view>
+</view>

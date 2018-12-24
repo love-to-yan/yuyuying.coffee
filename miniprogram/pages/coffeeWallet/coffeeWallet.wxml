@@ -1,0 +1,25 @@
+<!--pages/coffeeWallet/coffeeWallet.wxml-->
+<view class='container'>
+  <view class='header'></view>
+  <view class='section'>
+    <view wx:if='{{walletFlag}}' class='main'></view>
+    <view wx:if='{{!walletFlag}}' class='empty'>
+      <image src='../../images/icon/coffeeCup.png'></image>
+      <text>您的咖啡钱包有点空虚哦</text>
+    </view>
+  </view>
+  <view class='footer'>
+    <view>
+      <image src='../../images/icon/coupon2.png'></image>
+      <text>充值优惠</text>
+    </view>
+    <view>
+      <image src='../../images/icon/giftBox.png'></image>
+      <text>我要请客</text>
+    </view>
+    <view>
+      <image src='../../images/icon/redEnvelope.png'></image>
+      <text>发送红包</text>
+    </view>
+  </view>
+</view>

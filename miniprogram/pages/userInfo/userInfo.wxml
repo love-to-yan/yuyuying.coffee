@@ -1,0 +1,41 @@
+<!--pages/userInfo/userInfo.wxml-->
+<view class='container'>
+  <view class='portrait'>
+   
+      <text>头像</text>
+
+    <view>
+      <image></image>
+    </view>
+  </view>
+  <view class='userName'>
+ 
+      <text>用户名</text>
+
+
+      <text class='text_right'>{{user.name}}</text>
+   
+
+  </view>
+  <view class='sex'>
+  
+      <text>性别</text>
+ 
+
+      <text class='text_right'>{{user.sex}}</text>
+
+
+  </view>
+  <view class='tel'>
+
+      <text>绑定手机</text>
+
+
+      <text class='text_right'>{{user.tel}}</text>
+
+
+  </view>
+  <view class='exit'>
+    <text>退出登录</text>
+  </view>
+</view>

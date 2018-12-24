@@ -1,11 +1,15 @@
-// pages/order/order.js
+// pages/userInfo/userInfo.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    orderFlag:false
+    user:{
+      name:'张少宇',
+      sex:'男',
+      tel:'189-8120-9011'
+    }
   },
 
   /**
